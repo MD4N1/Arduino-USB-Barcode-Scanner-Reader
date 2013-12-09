@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:title="@string/pref_category_application_title"	android:key="@string/pref_category_application_key">
+		
+		<CheckBoxPreference android:title="@string/pref_close_on_detach_title" 
+			android:defaultValue="true" android:summary="@string/pref_close_on_detach_summary" 
+			android:key="@string/pref_close_on_detach_key">
+		</CheckBoxPreference>
+		
+		<ListPreference android:key="@string/pref_display_orientation_key"
+			android:title="@string/pref_display_orientation_title"
+			android:summary="@string/pref_display_orientation_summary"
+			android:entryValues="@array/pref_display_orientation_entries"
+			android:entries="@array/pref_display_orientation_entries" 
+			android:defaultValue="@string/pref_display_orientation_default">
+		</ListPreference>
+		
+		<ListPreference android:defaultValue="@string/pref_keyboard_type_default" 
+			android:key="@string/pref_keyboard_type_key" 
+			android:title="@string/pref_keyboard_type_title" 
+			android:entryValues="@array/pref_keyboard_type_entryvalues" 
+			android:summary="@string/pref_keyboard_type_summary" 
+			android:entries="@array/pref_keyboard_type_entries"> 
+		</ListPreference>
+		
+		<CheckBoxPreference android:defaultValue="false" 
+			android:key="@string/pref_show_keyboard_key" 
+			android:summary="@string/pref_show_keyboard_summary" 
+			android:title="@string/pref_show_keyboard_title"
+			android:enabled="true"
+			android:selectable="true">
+		</CheckBoxPreference>
+		
+		<CheckBoxPreference android:title="@string/pref_local_echo_title"
+			android:key="@string/pref_local_echo_key" 
+			android:enabled="true"
+			android:selectable="true" 
+			android:summary="@string/pref_local_echo_summary"
+			android:defaultValue="true">
+		</CheckBoxPreference>
+		
+		<ListPreference android:defaultValue="@string/pref_clear_action_default" 
+			android:key="@string/pref_clear_action_key" 
+			android:title="@string/pref_clear_action_title" 
+			android:entryValues="@array/pref_clear_action_entries" 
+			android:summary="@string/pref_clear_action_summary" 
+			android:entries="@array/pref_clear_action_entries">
+		</ListPreference>
+
+
+</PreferenceCategory>
+
+<PreferenceCategory android:title="@string/pref_category_display_title" android:key="@string/pref_category_display_key">
+ 
+		<ListPreference android:key="@string/pref_display_colors_key" 
+			android:title="@string/pref_display_colors_title" 
+			android:summary="@string/pref_display_colors_summary" 
+			android:entryValues="@array/pref_display_colors_entries" 
+			android:entries="@array/pref_display_colors_entries" 
+			android:defaultValue="@string/pref_display_colors_default">
+		</ListPreference>
+		
+		<ListPreference android:title="@string/pref_font_size_title"
+			android:entryValues="@array/pref_font_size_entryvalues" 
+			android:key="@string/pref_font_size_key"
+			android:entries="@array/pref_font_size_entries" 
+			android:summary="@string/pref_font_size_summary" 
+			android:defaultValue="@string/pref_font_size_default">
+		</ListPreference>
+			
+		<ListPreference android:key="@string/pref_font_typeface_key" 
+			android:title="@string/pref_font_typeface_title" 
+			android:entryValues="@array/pref_font_typeface_entries" 
+			android:summary="@string/pref_font_typeface_summary" 
+			android:entries="@array/pref_font_typeface_entries" 
+			android:defaultValue="@string/pref_font_typeface_default">
+		</ListPreference>
+		
+    </PreferenceCategory>
+        
+</PreferenceScreen>

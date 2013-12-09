@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_height="fill_parent"
+  android:orientation="horizontal" android:layout_width="match_parent">
+    
+    <ImageButton android:src="@drawable/keyboard" android:layout_width="30dip" 
+    android:id="@+id/toggleInputButton" android:layout_height="fill_parent"></ImageButton>
+
+    <TextView android:id="@+id/customTitle" android:layout_height="fill_parent" 
+   android:text="@string/app_name" android:layout_width="wrap_content"></TextView>
+   
+</LinearLayout>

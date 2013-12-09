@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.victorint.android.usb"
+      android:versionCode="5"
+      android:versionName="0.9.2">
+      
+    <uses-sdk android:minSdkVersion="10" android:targetSdkVersion="11"/>
+
+<!-- android:screenOrientation="portrait" -->
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@android:style/Theme">
+        <activity android:name=".ArduinoTerminalActivity"
+                  android:label="@string/app_name" 
+                  android:launchMode="singleInstance" 
+                  android:windowSoftInputMode="adjustResize" 
+                  android:configChanges="orientation" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".Preferences" />
+        
+        <activity android:name=".StartServiceActivity" android:label="@string/starter_app_name"
+        	android:launchMode="singleInstance" android:theme="@android:style/Theme.NoDisplay"
+        	android:excludeFromRecents="true">                  
+                  
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED" />
+            </intent-filter>
+
+            <meta-data android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED"
+                android:resource="@xml/accessory_filter" />
+        </activity>
+
+        <service android:name=".ArduinoUsbService"  /> 
+        <!-- <service android:name=".ArduinoUsbService" android:process=":remote" /> -->
+        
+		<uses-library android:name="com.android.future.usb.accessory" />  
+    </application>
+</manifest>

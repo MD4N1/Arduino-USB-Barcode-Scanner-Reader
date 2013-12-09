@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/main_menu_settings_name" android:id="@+id/mainMenuSettings" android:icon="@drawable/preferences"></item><item android:id="@+id/mainMenuConnect" android:title="@string/main_menu_reconnect_name" android:icon="@drawable/connect" android:visible="false" android:enabled="false"></item>
+    <item android:id="@+id/mainMenuExit" android:title="@string/main_menu_exit_name" android:icon="@drawable/exit"></item>
+    
+</menu>

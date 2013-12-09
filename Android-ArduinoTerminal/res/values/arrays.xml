@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="pref_font_size_entries">
+        <item>4 pt</item>
+        <item>6 pt</item>
+        <item>8 pt</item>
+        <item>10 pt</item>
+        <item>11 pt</item>
+        <item>12 pt</item>
+        <item>13 pt</item>
+        <item>14 pt</item>
+        <item>15 pt</item>
+        <item>16 pt</item>
+        <item>17 pt</item>
+        <item>18 pt</item>
+        <item>20 pt</item>
+        <item>24 pt</item>
+        <item>28 pt</item>
+        <item>32 pt</item>
+        <item>36 pt</item>
+        <item>40 pt</item>
+    </string-array>
+
+    <string-array name="pref_font_size_entryvalues">
+        <item>4</item>
+        <item>6</item>
+        <item>8</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>20</item>
+        <item>24</item>
+        <item>28</item>
+        <item>32</item>
+        <item>36</item>
+        <item>40</item>
+    </string-array>
+
+    <string-array name="pref_font_typeface_entries">
+        <item>Monospace</item>
+        <item>Sans-serif</item>
+        <item>Serif</item>
+    </string-array>
+
+    <string-array name="pref_display_colors_entries">
+        <item>Black on White</item>
+        <item>White on Black</item>
+        <item>Green on Black</item>
+        <item>White on Blue</item>
+    </string-array>
+
+    <string-array name="pref_display_orientation_entries">
+        <item>Portrait</item>
+        <item>Landscape</item>
+        <item>Sensor</item>
+    </string-array>
+
+    <string-array name="pref_clear_action_entries">
+        <item>Clear Display</item>
+        <item>Clear Input Field</item>
+        <item>Clear Both</item>
+    </string-array>
+
+     <string-array name="pref_show_messages_entries">
+        <item>None</item>
+        <item>Information</item>
+        <item>Debug</item>
+    </string-array>
+
+     <string-array name="pref_show_messages_entryvalues">
+        <item>0</item>
+        <item>22</item>
+        <item>24</item>
+    </string-array>
+
+     <string-array name="pref_keyboard_type_entries">
+        <item>Numeric</item>
+        <item>QWERTY</item>
+    </string-array>
+
+     <string-array name="pref_keyboard_type_entryvalues">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+</resources>

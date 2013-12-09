@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+ 	<usb-accessory manufacturer="Google, Inc." model="DemoKit" version="1.0" />
+    <usb-accessory manufacturer="Circuits@Home, ltd." model="USB Host Shield" version="1.0" />
+</resources>

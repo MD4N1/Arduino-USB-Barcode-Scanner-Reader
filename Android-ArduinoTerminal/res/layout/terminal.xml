@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout android:layout_width="match_parent"
+		android:layout_height="wrap_content" android:id="@+id/LinearLayout01">
+	</LinearLayout>
+	<LinearLayout android:layout_width="match_parent"
+		android:id="@+id/inputLayout" android:layout_height="wrap_content" android:layout_margin="2dip">
+		<EditText android:id="@+id/editText1" android:layout_weight="1"
+			android:maxLines="1" android:inputType="textNoSuggestions|textVisiblePassword"
+			android:imeOptions="flagNoExtractUi|actionSend" android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" android:layout_width="wrap_content" 
+            android:layout_height="match_parent" android:capitalize="none" android:layout_margin="2dip"></EditText>
+		<Button android:text="@string/terminal_activity_clear" android:layout_centerVertical="true" 
+			android:id="@+id/button21" android:layout_width="wrap_content" android:layout_height="match_parent"></Button>
+		<Button android:layout_width="wrap_content" android:text="@string/terminal_activity_send"
+			android:layout_centerVertical="true" android:id="@+id/button22" android:layout_height="match_parent"></Button>
+	</LinearLayout>
+	<ScrollView android:layout_width="match_parent" android:id="@+id/scrollView1"
+		android:layout_height="match_parent" android:fadingEdge="none"
+		android:fadingEdgeLength="0dip">
+		<TextView android:id="@+id/textView22" android:layout_width="match_parent"
+			android:layout_height="match_parent" android:layout_gravity="top"
+			android:minLines="9" android:editable="false" android:fadingEdge="none"
+			android:fadingEdgeLength="0dip" android:layout_margin="2dip"
+			android:paddingLeft="2dip" android:bufferType="editable">
+		</TextView>
+	</ScrollView>
+
+</LinearLayout>
